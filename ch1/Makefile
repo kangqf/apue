@@ -22,4 +22,4 @@ all : 1_1_ls 1_2_nobufio 1_3_bufio 1_4_uid_gid 1_5_shell 1_6_error
 	
 .PHONY : clean
 clean:
-	rm *.exe *.o
+	-rm *.exe *.o
