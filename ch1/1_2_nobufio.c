@@ -8,7 +8,7 @@ int main()
     char buf[BUFFER_SIZE];
     while((n = read(STDIN_FILENO,buf,BUFFER_SIZE)) > 0)
     {
-        if(write(STDOUT_FILENO,buf,BUFFER_SIZE) != n)
+        if(write(STDOUT_FILENO,buf,n) != n)
             err_sys("write error");   
     }
     if(n < 0)
